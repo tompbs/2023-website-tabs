@@ -1,0 +1,130 @@
+/* Apply box-sizing and reset margin and padding for all elements */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+    background-color: #79c8c9;
+    font-family: "Open Sans", sans-serif;
+    /* border: 1px solid red; */
+
+}
+
+/* Style the header section */
+header {
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+
+}
+
+/* Style the logo image */
+.logo img {
+    height: 50px;
+	width: auto;
+    position:relative;
+    z-index: 2;
+
+}
+
+
+/* Position the navigation menu to the left */
+nav {
+	margin-left: 20px;
+    margin-right: auto;
+    z-index: 2;
+
+}
+
+.tabs {
+	list-style: none;
+	display: flex;
+    position: relative;
+}
+
+.tabs li {
+    width: 250px;
+    position: relative;
+    text-align: left;
+    border-bottom: 3px solid #1a98a3;
+    margin-left : 30px;
+    padding: 10px;
+    padding-left: 30px;
+    font-size: large;
+
+}
+
+.tabs li a {
+    color: #1a98a3;
+	text-decoration: none;
+
+}
+
+.tabs li:hover{
+    background-color: rgb(83, 190, 200, 0.75);
+}
+
+.tabs li:hover a {
+    background-color:transparent;
+    color: white
+}
+
+/* Style the sub-tabs container */
+.sub-tabs {
+	display: none;
+    list-style: none;
+	position: absolute;
+    background-color:transparent;
+    top: 100% ;
+    left: 0;
+
+}
+
+/* Show sub-tabs when the parent tab is hovered */
+.parent-tab:hover .sub-tabs {
+	display: block;
+}
+
+.sub-tabs li {
+    margin: 0px;
+    margin-top: 4px;
+    font-size: smaller;
+    background-color: rgb(83, 190, 200, 0.75);
+    border-bottom: none;
+
+}
+
+/* Style the sub-tab links */
+.sub-tabs li a {
+	display: block;
+    background-color:transparent;
+}
+
+/* Style the sub-tab links on hover */
+.sub-tabs li:hover{
+    border: 3px solid #1a98a3;
+}
+.sub-tabs li:hover a{
+    background-color: transparent;
+}
+
+
+/* Style the main section */
+main {
+	padding: 20px;
+}
+
+/* Style the content section */
+.content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Style the rond image */
+.content img {
+    max-width: 80%;
+	height: auto;
+    opacity: 0.50;
+    position: absolute;
+    transform: translate(10%, -20%);
+
+}
