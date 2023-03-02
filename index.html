@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<title>Tabs Project</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
 
 </head>
+
 <body>
 	<header>
 		<div class="logo">
@@ -19,7 +21,13 @@
 					<ul class="sub-tabs">
 						<li><a href="#">Glossaire</a></li>
 						<li><a href="#">Les deux approches de la conception biomimétique</a></li>
-						<li><a href="#">Les processus de conception biomimétique</a></li>
+						<li class="parent-subtab"><a href="#">Les processus de conception biomimétique</a>
+							<ul class="subsub-tabs">
+								<li><a href="#">Les procesus de conception biomimétique technology pull</a></li>
+								<li><a href="#">Le processus biomimétique problem-driven unifié</a></li>
+								<li><a href="#">Le processus interdisciplinaire de conception biomimétique (TPIB)</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Les outils de conception biomimétique</a></li>
 						<li><a href="#">Les bases de l'éco-conception biomimétique (ECB)</a></li>
 						<li><a href="#">La composition des étuipes en conception biomimétique</a></li>
@@ -27,7 +35,13 @@
 				</li>
 				<li class="parent-tab" id="tab-2"><a href="#">Processus intéractif</a>
 					<ul class="sub-tabs">
-						<li><a href="#">Structure du processus intéractif BiOMIg</a></li>
+						<li class="parent-subtab"><a href="#">Structure du processus intéractif BiOMIg</a>
+							<ul class="subsub-tabs">
+								<li><a href="#">Description des phases</a></li>
+								<li><a href="#">Description des étapes</a></li>
+								<li><a href="#">Description des axes</a></li>
+							</ul>
+						</li>
 						<li><a href="#">Processus interactif paramétrable</a></li>
 					</ul>
 				</li>
@@ -36,9 +50,10 @@
 	</header>
 	<main>
 		<div class="content">
-            <img src="rond.png" alt="Circle">
+			<img src="rond.png" alt="Circle">
 		</div>
 	</main>
 	<script src="script.js"></script>
 </body>
+
 </html>

@@ -87,7 +87,7 @@ nav {
 .sub-tabs li {
     margin: 0px;
     margin-top: 4px;
-    font-size: smaller;
+    font-size:small;
     background-color: rgb(83, 190, 200, 0.75);
     border-bottom: none;
 
@@ -107,7 +107,41 @@ nav {
     background-color: transparent;
 }
 
+.subsub-tabs {
+    display: none;
+    list-style: none;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 102%;
+  }
+  
+  .parent-subtab:hover .subsub-tabs {
+    display: block;
+  }
+  
+  .subsub-tabs li {
+    margin: 0px;
+    margin-top: 4px;
+    font-size: small;
+    background-color: rgba(236, 241, 241, 0.75);
+    border-bottom: none;
 
+  }
+  
+  /* Style the subsub-tab links */
+  .subsub-tabs li a {
+  }
+  
+  /* Style the subsub-tab links on hover */
+  .subsub-tabs li:hover {
+    background-color: rgba(236, 241, 241, 0.75);
+    border: none;
+  }
+  
+  .subsub-tabs li:hover a {
+    color: #1a98a3;
+  }
 /* Style the main section */
 main {
 	padding: 20px;
